@@ -1,0 +1,79 @@
+[
+  {
+    "description": "    As a Swag Labs user I want to be able to login to the application so that I can buy products",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-feature;login-with-valid-credentials",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login with valid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 519927708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I am on the login page",
+            "match": {
+              "location": "step-definitions/login-steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 432196083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "step-definitions/login-steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119392124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I am successfully logged in and redirected to the home page",
+            "match": {
+              "location": "step-definitions/login-steps.js:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13896875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35454291
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-feature",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Feature",
+    "tags": [],
+    "uri": "features/login.feature"
+  }
+]
