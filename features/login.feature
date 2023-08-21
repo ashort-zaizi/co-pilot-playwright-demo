@@ -7,4 +7,13 @@ Feature: Login Feature
         When I enter valid credentials
         Then I am successfully logged in and redirected to the home page
 
+    Scenario Outline: Login with invalid credentials
+        Given I am on the login page
+        When I enter username "<username>" and password "<password>"
+        Then I wait for 3 seconds
 
+        Examples:
+            | username          | password          |
+            | standard_user     | invalid_password  |
+            | invalid_username  | secret_sauce      |
+            | invalid_username  | invalid_password  |
